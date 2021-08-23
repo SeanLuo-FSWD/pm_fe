@@ -1,0 +1,30 @@
+.content {
+  padding: 0 1em 1em 1em;
+}
+.content.dark {
+  background-color: black;
+  color: white;
+}
+
+.options {
+  padding: 1em;
+  border-bottom-style: solid;
+  margin-bottom: 2em;
+  border-bottom-width: thin;
+  .ytbIcon {
+    margin-left: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 800px) {
+  .contentGrid {
+    flex-direction: row;
+  }
+}

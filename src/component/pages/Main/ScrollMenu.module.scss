@@ -1,0 +1,36 @@
+.scrollMenu {
+  grid-area: sm;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  span {
+    display: none;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+}
+.scrollMenu.dark {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  .scrollMenu {
+    width: 300px;
+    flex: 0 0 250px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+
+    span {
+      display: inline;
+    }
+  }
+}

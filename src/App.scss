@@ -1,0 +1,16 @@
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.banner {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  h1,
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
