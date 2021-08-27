@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./ScrollMenu.module.scss";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link, Events, animateScroll as scroll } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 function ScrollMenu(prop: any) {
+  // useEffect(() => {
+  //   Events.scrollEvent.register("begin", function () {
+  //     console.log("begin", arguments);
+  //   });
+
+  //   Events.scrollEvent.register("end", function () {
+  //     console.log("end", arguments);
+  //   });
+
+  //   return () => {
+  //     Events.scrollEvent.remove("begin");
+  //     Events.scrollEvent.remove("end");
+  //   };
+  // }, []);
+
   function scrollToTop() {
     scroll.scrollToTop();
   }
@@ -90,6 +99,7 @@ function ScrollMenu(prop: any) {
           11. <span>Conclusion</span>
         </Link>
       </p>
+
       <p className={`${styles.top}`} onClick={scrollToTop}>
         Go to Top
       </p>

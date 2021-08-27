@@ -14,7 +14,7 @@ const ErrorPg = (props: any) => {
       ) : (
         <h2 data-cy="ErrorPg_errMsg">{err_msg}</h2>
       )}
-      <Link data-cy="ErrorPg_back" to="/">
+      <Link data-cy="ErrorPg_back" to="/contact">
         Go back
       </Link>
     </div>
