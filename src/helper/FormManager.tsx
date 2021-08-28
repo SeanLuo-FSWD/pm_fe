@@ -12,8 +12,13 @@ export default function FormManager({ initialValues, children }: any) {
     }
   };
 
+  const clearValue = () => {
+    setValues(initialValues);
+  };
+
   return children({
     values,
     setValue,
+    clearValue,
   });
 }

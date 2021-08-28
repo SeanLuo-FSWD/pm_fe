@@ -28,20 +28,26 @@ function Main() {
       >
         <div className={`${styles.options}`}>
           <div className="flex_center">
-            <p>For the audio version on Youtube, click here </p>
-            <YouTubeIcon className={`${styles.ytbIcon}`} />
+            <p>Audio version click here</p>&nbsp;
+            <a
+              href="https://youtu.be/XAG3qG02Ib8"
+              target="_blank"
+              title="How to fix wealth gap"
+            >
+              <YouTubeIcon className={`${styles.ytbIcon}`} />
+            </a>
           </div>
 
           <div className="flex_center">
             <p>
-              To switch to {lightMode ? <span>dark</span> : <span>light</span>}{" "}
-              mode, click here
+              Switch to {lightMode ? <span>dark</span> : <span>light</span>}{" "}
+              mode here&nbsp;
+              <Switch
+                checked={lightMode}
+                onChange={handleChange}
+                color="default"
+              />
             </p>
-            <Switch
-              checked={lightMode}
-              onChange={handleChange}
-              color="default"
-            />
           </div>
         </div>
 

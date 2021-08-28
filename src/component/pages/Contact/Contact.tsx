@@ -13,8 +13,6 @@ function Contact() {
     console.log(values);
 
     doPost("contact", values, (data: string) => {
-      console.log(data);
-
       if (data === "new") {
         set_message("Submission successful. Thank you for your interest!");
       } else {
@@ -33,21 +31,28 @@ function Contact() {
       <div className={`${styles.preword}`}>
         <p>
           Thank you for reading or listening to the Prosperity Manifesto. If you
-          would like to show your support for my endeavour against the wealth
-          gap, and receive news of the next milestone, please leave your contact
-          information below.
+          would like to show your support or interest for my endeavour against
+          the wealth gap, and receive news of my next milestone, please leave
+          your contact information below.
         </p>
-        <p>Your data will not be shared, or used for spamming purpose</p>
+        <p>
+          If there is any issue with the form below, you can also email me at
+          sean@theprosperitymanifesto.com.
+        </p>
+        <p>Your data will not be shared, or used for spamming purpose.</p>
+
+        <p>~ Sean</p>
       </div>
 
       <FormManager
         initialValues={{ name: "", email: "", message: "", hdyh: "" }}
       >
-        {({ values, setValue }: any) => (
+        {({ values, setValue, clearValue }: any) => (
           <form
             onSubmit={(e) => {
               e.preventDefault();
               handleSubmit(values);
+              clearValue();
             }}
           >
             <div className={`flex_center ${styles.boxes}`}>

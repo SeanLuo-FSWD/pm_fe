@@ -16,12 +16,17 @@
 
 .preword {
   padding: 1em 1em 0 1em;
+  text-align: center;
 }
 
 .success {
   h3,
   p {
     margin-bottom: 0;
-    color: red;
+    color: blue;
   }
+}
+
+form {
+  margin-bottom: 2em;
 }

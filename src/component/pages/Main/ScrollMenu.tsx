@@ -20,7 +20,7 @@ function ScrollMenu(prop: any) {
   // }, []);
 
   function scrollToTop() {
-    scroll.scrollToTop();
+    scroll.scrollToTop({ duration: 100 });
   }
   return (
     <div
@@ -44,9 +44,9 @@ function ScrollMenu(prop: any) {
       </p>
       <p>
         <Link
-          activeClass="active"
-          className="sec2"
           to="sec2"
+          className="sec2"
+          activeClass="active"
           spy={true}
           smooth={true}
           duration={300}
@@ -55,48 +55,102 @@ function ScrollMenu(prop: any) {
         </Link>
       </p>
       <p>
-        <Link to="sec3">
+        <Link
+          to="sec3"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           3. <span>The impact of the problem</span>
         </Link>
       </p>
       <p>
-        <Link to="sec4">
+        <Link
+          to="sec4"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           4. <span>The two obstacles</span>
         </Link>
       </p>
       <p>
-        <Link to="sec5">
+        <Link
+          to="sec5"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           5. <span>The missing link</span>
         </Link>
       </p>
       <p>
-        <Link to="sec6">
+        <Link
+          to="sec6"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           6. <span>The bad state</span>
         </Link>
       </p>
       <p>
-        <Link to="sec7">
+        <Link
+          to="sec7"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           7. <span>The ideal state</span>
         </Link>
       </p>
       <p>
-        <Link to="sec8">
+        <Link
+          to="sec8"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           8. <span>A beautiful world</span>
         </Link>
       </p>
       <p>
-        <Link to="sec9">
+        <Link
+          to="sec9"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           9. <span>The path</span>
         </Link>
       </p>
       <p>
-        <Link to="sec10">
+        <Link
+          to="sec10"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
           10. <span>The answer</span>
         </Link>
       </p>
       <p>
-        <Link to="sec11">
-          11. <span>Conclusion</span>
+        <Link
+          to="sec11"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
+          11. <span>Final thoughts</span>
         </Link>
       </p>
 
