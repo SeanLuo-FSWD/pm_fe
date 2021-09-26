@@ -1628,8 +1628,12 @@ function Text() {
           knowledge to make this happen, please take this idea as your own and
           go for it. Otherwise, you can also help by sharing this “Prosperity
           Manifesto”. If you are interested in my particular endeavour, and
-          being updated of my next milestone, please go to my site at
-          www.endwealthgap.org/contact, and leave your name and email.&nbsp;
+          being updated of my next milestone, please visit the contact page
+          at&nbsp;
+          <a href="/contact" target="_blank">
+            www.endwealthgap.org/contact
+          </a>
+          , and leave your name and email.&nbsp;
         </p>
         <p>
           <br />

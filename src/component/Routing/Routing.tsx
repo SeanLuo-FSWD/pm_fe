@@ -9,13 +9,13 @@ import ErrorHandler from "./ErrorHandler";
 function Routing() {
   return (
     <BrowserRouter>
-      <ErrorHandler>
-        <Switch>
-          <Route path="/error" component={Error} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/" component={Main} />
-        </Switch>
-      </ErrorHandler>
+      {/* <ErrorHandler> */}
+      <Switch>
+        <Route path="/error" component={Error} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/" component={Main} />
+      </Switch>
+      {/* </ErrorHandler> */}
     </BrowserRouter>
   );
 }
