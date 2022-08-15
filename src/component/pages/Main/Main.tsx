@@ -15,7 +15,6 @@ function Main() {
 
   return (
     <>
-      <Navbar />
       <div className={`banner`}>
         <h1>Fixing Wealth Inequality</h1>
         <h2>The Prosperity Manifesto</h2>
